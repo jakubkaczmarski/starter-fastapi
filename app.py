@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from openai import OpenAI
 from fastapi.responses import FileResponse
 from typing import Union
 from fastapi.middleware.cors import CORSMiddleware
