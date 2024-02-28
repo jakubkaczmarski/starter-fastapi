@@ -28,6 +28,9 @@ app.add_middleware(
     ],  # Allows all headers. You can specify headers like ["Content-Type"] for security.
 )
 
+@app.get("/check/")
+def check():
+    return {"status": "ok"}
 
 @app.post("/generate/")
 def generate(prompt: Prompt):
